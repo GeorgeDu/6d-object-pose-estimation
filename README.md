@@ -1,18 +1,14 @@
 ## 6D Object Pose Estimation: Papers and Codes
 
-This repository summarizes papers and codes for **6D Object Pose Estimation**, which means computing the 6D transformation _from the **object coordinate** to the **camera coordinate**_. Let $X_o$ represents the object's points in the object coordinate, and $X_c$ represents the object's points in the camera coordinate, the 6D object pose $T$ satisfies $X_c = T * X_o$ and $T=[R,t]$ contains the three dimensional rotation $R$ and the three dimensional translation $t$.
+This repository summarizes papers and codes for **6D Object Pose Estimation** of rigid objects, which means computing the 6D transformation from the **object coordinate** to the **camera coordinate**. Let _Xo​_ represents the object's points in the object coordinate, and _Xc​_ represents the object's points in the camera coordinate, the 6D object pose ​_T_ satisfies ​_Xc = T * Xo​_ and ​_T = [R, t]​_ contains the three dimensional rotation _R​_ and the three dimensional translation ​_t​_.
 
-Most of the current methods aim at **instance-level 6D object pose estimation**, which means that the identical 3D model exists. There also emerges **category-level 6D object pose estimation**, which means that the observed object could be not identical to existing 3D models but come from a same geometric category. Based on the inputs, methods can also be categorized into __RGB-D image-based methods__ and __point cloud-based methods__. RGB-D image-based methods mainly utilized the 2D RGB image and the 2.5D Depth image. Point cloud-based methods utilize registration-based methods.
+Most of the current methods aim at **instance-level 6D object pose estimation**, which means that the identical 3D model exists. There also emerges **category-level 6D object pose estimation**, which means that the observed object could be not identical to existing 3D models but come from a same geometric category. Based on the inputs, methods can also be categorized into __RGB-D image-based methods__ and __point cloud-based methods__. 
 
-### 1.1 RGB-D Image-based Methods
+### 1. Instance-level 6D Object Pose Estimation
+
+#### 1.1 RGB-D Image-based Methods
 
 ***Survey papers:***
-
-***2020:***
-
-**[arXiv]** A Survey on Deep Learning for Localization and Mapping: Towards the Age of Spatial Machine Intelligence, [[paper](https://arxiv.org/pdf/2006.12567.pdf)]
-
-**[arXiv]** Recent Advances in 3D Object and Hand Pose Estimation, [[paper](https://arxiv.org/pdf/2006.05927.pdf)]
 
 **[arXiv]** A Review on Object Pose Recovery: from 3D Bounding Box Detectors to Full 6D Pose Estimators, [[paper](https://arxiv.org/pdf/2001.10609.pdf)]
 
@@ -224,9 +220,9 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 
 
-### 3 Category-level Methods
+### 2 Category-level Methods
 
-#### 3.1 Category-level 6D pose estimation
+#### 2.1 Category-level 6D pose estimation
 
 ***2020:***
 
@@ -252,7 +248,7 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 
 
-#### 3.2 3D shape reconstruction from images
+#### 2.2 3D shape reconstruction from images
 
 ***2020:***
 
@@ -326,7 +322,7 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 
 
-#### 3.3 3D shape rendering
+#### 2.3 3D shape rendering
 
 ***2020:***
 
