@@ -1,6 +1,8 @@
 ## 6D Object Pose Estimation: Papers and Codes
 
-This repository summarizes papers and codes for **6D Object Pose Estimation**, which can be categorized into __RGB-D image-based methods__ and __point cloud-based methods__. RGB-D image-based methods mainly utilized the 2D RGB image and the 2.5D Depth image. Point cloud-based methods utilize registration-based methods.
+This repository summarizes papers and codes for **6D Object Pose Estimation**, which means computing the 6D transformation _from the **object coordinate** to the **camera coordinate**_. Let $X_o$ represents the object's points in the object coordinate, and $X_c$ represents the object's points in the camera coordinate, the 6D object pose $T$ satisfies $X_c = T * X_o$ and $T=[R,t]$ contains the three dimensional rotation $R$ and the three dimensional translation $t$.
+
+Most of the current methods aim at **instance-level 6D object pose estimation**, which means that the identical 3D model exists. There also emerges **category-level 6D object pose estimation**, which means that the observed object could be not identical to existing 3D models but come from a same geometric category. Based on the inputs, methods can also be categorized into __RGB-D image-based methods__ and __point cloud-based methods__. RGB-D image-based methods mainly utilized the 2D RGB image and the 2.5D Depth image. Point cloud-based methods utilize registration-based methods.
 
 ### 1.1 RGB-D Image-based Methods
 
