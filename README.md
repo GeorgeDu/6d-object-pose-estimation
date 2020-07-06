@@ -1,1 +1,1 @@
-# 6d-object-pose-estimation
+# 6D Object Pose Estimation: Papers and Codes
