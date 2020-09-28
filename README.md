@@ -346,7 +346,6 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 **[arXiv]** Deep-Learning Assisted High-Resolution Binocular Stereo Depth Reconstruction, [[paper](https://arxiv.org/abs/1912.05012)]
 
 
-2.2 3D shape reconstruction from images <a name="category-3d"></a>
 #### 2.3 3D shape rendering <a name="3d-shape"></a>
 
 ***2020:***
