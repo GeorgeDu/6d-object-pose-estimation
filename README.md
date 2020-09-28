@@ -1,12 +1,37 @@
-## 6D Object Pose Estimation: Papers and Codes
+
+## 6D Object Pose Estimation: Papers and Codes 
 
 This repository summarizes papers and codes for **6D Object Pose Estimation** of rigid objects, which means computing the 6D transformation from the **object coordinate** to the **camera coordinate**. Let _Xo​_ represents the object's points in the object coordinate, and _Xc​_ represents the object's points in the camera coordinate, the 6D object pose ​_T_ satisfies ​_Xc = T * Xo​_ and ​_T = [R, t]​_ contains the three dimensional rotation _R​_ and the three dimensional translation ​_t​_.
 
 Most of the current methods aim at **instance-level 6D object pose estimation**, which means that the identical 3D model exists. There also emerges **category-level 6D object pose estimation**, which means that the observed object could be not identical to existing 3D models but come from a same geometric category. Based on the inputs, methods can also be categorized into __RGB-D image-based methods__ and __point cloud-based methods__. 
 
-### 1. Instance-level 6D Object Pose Estimation
+# Table of Contents
+1. [Instance-level 6D Object Pose Estimation](#instance-level)
 
-#### 1.1 RGB-D Image-based Methods
+&nbsp;&nbsp;&nbsp;&nbsp;1.1 [RGB-D Image-based Methods](#instance-rgb)
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. [Correspondence-based Methods](#correspondance-based)
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [Match 2D feature points](#match-2d)
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. [Regress 2D projections](#regress-2d)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. [Template-based Methods](#template-based)
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. [Voting-based Methods](#voting-based)
+    
+2. [Category-level Methods](#category-level)
+
+&nbsp;&nbsp;&nbsp;&nbsp;2.1. [Category-level 6D pose estimation](#category-6d)
+  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2. [3D shape reconstruction from images](#category-3d)
+  
+&nbsp;&nbsp;&nbsp;&nbsp;2.3. [3D shape rendering](#3d-shape)
+  
+  
+### 1. Instance-level 6D Object Pose Estimation <a name="instance-level"></a>
+
+#### 1.1 RGB-D Image-based Methods <a name="instance-rgb"></a>
 
 ***Survey papers:***
 
@@ -16,9 +41,9 @@ Most of the current methods aim at **instance-level 6D object pose estimation**,
 
 **[ECCVW]** A Summary of the 4th International Workshop on Recovering 6D Object Pose, [[paper](https://arxiv.org/abs/1810.03758)]
 
-#### 1.1.1 Correspondence-based Methods
+#### 1.1.1 Correspondence-based Methods <a name="correspondance-based"></a>
 
-##### a. Match 2D feature points
+##### a. Match 2D feature points <a name="match-2d"></a>
 
 ***2020:***
 
@@ -52,7 +77,7 @@ Most of the current methods aim at **instance-level 6D object pose estimation**,
 
 
 
-##### b. Regress 2D projections
+##### b. Regress 2D projections <a name="regress-2d"></a>
 
 ***2020:***
 
@@ -100,7 +125,7 @@ Most of the current methods aim at **instance-level 6D object pose estimation**,
 
 
 
-#### 1.1.2 Template-based Methods
+#### 1.1.2 Template-based Methods <a name="template-based"></a>
 
 This kind of methods can be regarded as regression-based methods.
 
@@ -186,7 +211,7 @@ This kind of methods can be regarded as regression-based methods.
 
 
 
-#### 1.1.3 Voting-based Methods
+#### 1.1.3 Voting-based Methods <a name="voting-based"></a>
 
 ***2019:***
 
@@ -206,7 +231,7 @@ This kind of methods can be regarded as regression-based methods.
 
 
 
-***Datasets:***
+***Datasets:*** <a name="1-1-3-datasets"></a>
 
 [LineMOD](http://campar.in.tum.de/Main/StefanHinterstoisser): Model based training, detection and pose estimation of texture-less 3d objects in heavily cluttered scenes, ACCV, 2012 [[paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.250.6547&rep=rep1&type=pdf)] [[database](https://github.com/paroj/linemod_dataset)]
 
@@ -220,9 +245,9 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 
 
-### 2 Category-level Methods
+### 2 Category-level Methods <a name="category-level"></a>
 
-#### 2.1 Category-level 6D pose estimation
+#### 2.1 Category-level 6D pose estimation <a name="category-6d"></a>
 
 ***2020:***
 
@@ -248,7 +273,7 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 
 
-#### 2.2 3D shape reconstruction from images
+#### 2.2 3D shape reconstruction from images <a name="category-3d"></a>
 
 ***2020:***
 
@@ -321,8 +346,8 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 **[arXiv]** Deep-Learning Assisted High-Resolution Binocular Stereo Depth Reconstruction, [[paper](https://arxiv.org/abs/1912.05012)]
 
 
-
-#### 2.3 3D shape rendering
+2.2 3D shape reconstruction from images <a name="category-3d"></a>
+#### 2.3 3D shape rendering <a name="3d-shape"></a>
 
 ***2020:***
 
