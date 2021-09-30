@@ -1,34 +1,34 @@
 
-## 6D Object Pose Estimation: Papers and Codes 
+## 6D Object Pose Estimation: Papers and Codes
 
 This repository summarizes papers and codes for **6D Object Pose Estimation** of rigid objects, which means computing the 6D transformation from the **object coordinate** to the **camera coordinate**. Let _Xo​_ represents the object's points in the object coordinate, and _Xc​_ represents the object's points in the camera coordinate, the 6D object pose ​_T_ satisfies ​_Xc = T * Xo​_ and ​_T = [R, t]​_ contains the three dimensional rotation _R​_ and the three dimensional translation ​_t​_.
 
-Most of the current methods aim at **instance-level 6D object pose estimation**, which means that the identical 3D model exists. There also emerges **category-level 6D object pose estimation**, which means that the observed object could be not identical to existing 3D models but come from a same geometric category. Based on the inputs, methods can also be categorized into __RGB-D image-based methods__ and __point cloud-based methods__. 
+Most of the current methods aim at **instance-level 6D object pose estimation**, which means that the identical 3D model exists. There also emerges **category-level 6D object pose estimation**, which means that the observed object could be not identical to existing 3D models but come from a same geometric category. Based on the inputs, methods can also be categorized into __RGB-D image-based methods__ and __point cloud-based methods__.
 
 # Table of Contents
 1. [Instance-level 6D Object Pose Estimation](#instance-level)
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.1 [RGB-D Image-based Methods](#instance-rgb)
-    
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. [Correspondence-based Methods](#correspondance-based)
-    
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. [Match 2D feature points](#match-2d)
-    
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. [Regress 2D projections](#regress-2d)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. [Template-based Methods](#template-based)
-    
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. [Voting-based Methods](#voting-based)
-    
+
 2. [Category-level Methods](#category-level)
 
 &nbsp;&nbsp;&nbsp;&nbsp;2.1. [Category-level 6D pose estimation](#category-6d)
-  
+
 &nbsp;&nbsp;&nbsp;&nbsp;2.2. [3D shape reconstruction from images](#category-3d)
-  
+
 &nbsp;&nbsp;&nbsp;&nbsp;2.3. [3D shape rendering](#3d-shape)
-  
-  
+
+
 ### 1. Instance-level 6D Object Pose Estimation <a name="instance-level"></a>
 
 #### 1.1 RGB-D Image-based Methods <a name="instance-rgb"></a>
@@ -131,6 +131,8 @@ This kind of methods can be regarded as regression-based methods.
 
 ***2020:***
 
+**[IROS]** se(3)-TrackNet: Data-driven 6D Pose Tracking by Calibrating Image Residuals in Synthetic Domains, [[paper](https://arxiv.org/abs/2007.13866)] [[github](https://github.com/wenbowen123/iros20-6d-pose-tracking)]
+
 **[arXiv]** A survey on deep supervised hashing methods for image retrieval, [[paper](https://arxiv.org/pdf/2006.05627.pdf)]
 
 **[arXiv]** Neural Object Learning for 6D Pose Estimation Using a Few Cluttered Images, [[paper](https://arxiv.org/pdf/2005.03717.pdf)]
@@ -150,6 +152,9 @@ This kind of methods can be regarded as regression-based methods.
 **[arXiv]** Robust 6D Object Pose Estimation by Learning RGB-D Features, [[paper](https://arxiv.org/pdf/2003.00188.pdf)]
 
 **[arXiv]** HybridPose: 6D Object Pose Estimation under Hybrid Representations, [[paper](https://arxiv.org/pdf/2001.01869.pdf)] [[code](https://github.com/chensong1995/HybridPose)]
+
+**[ICRA]** Robust, Occlusion-aware Pose Estimation for Objects Grasped by Adaptive Hands, [[paper](https://arxiv.org/pdf/2003.03518.pdf)] [[github](https://github.com/wenbowen123/icra20-hand-object-pose)]
+
 
 ***2019:***
 
@@ -249,6 +254,10 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 #### 2.1 Category-level 6D pose estimation <a name="category-6d"></a>
 
+***2021:***
+
+**[IROS]** BundleTrack: 6D Pose Tracking for Novel Objects without Instance or Category-Level 3D Models, [[paper](https://arxiv.org/abs/2108.00516)] [[github](https://github.com/wenbowen123/BundleTrack)]
+
 ***2020:***
 
 **[arXiv]** CPS: Class-level 6D Pose and Shape Estimation From Monocular Images, [[paper](https://arxiv.org/pdf/2003.05848v1.pdf)]
@@ -265,7 +274,7 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 **[arXiv]** Self-Supervised 3D Keypoint Learning for Ego-motion Estimation, [[paper](https://arxiv.org/abs/1912.03426)]
 
-**[CVPR]** Normalized Object Coordinate Space for Category-Level 6D Object Pose and Size Estimation, [[paper](https://arxiv.org/abs/1901.02970)] [[code](https://github.com/hughw19/NOCS_CVPR2019)] 
+**[CVPR]** Normalized Object Coordinate Space for Category-Level 6D Object Pose and Size Estimation, [[paper](https://arxiv.org/abs/1901.02970)] [[code](https://github.com/hughw19/NOCS_CVPR2019)]
 
 **[arXiv]** Instance- and Category-level 6D Object Pose Estimation, [[paper](https://arxiv.org/pdf/1903.04229.pdf)]
 
