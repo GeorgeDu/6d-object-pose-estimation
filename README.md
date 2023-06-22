@@ -254,6 +254,11 @@ YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimat
 
 #### 2.1 Category-level 6D pose estimation <a name="category-6d"></a>
 
+***2023:***
+
+**[CVPR]** BundleSDF: Neural 6-DoF Tracking and 3D Reconstruction of Unknown Objects, [[paper](https://arxiv.org/abs/2303.14158)] [[github](https://github.com/NVlabs/BundleSDF)] [[video](https://www.youtube.com/watch?v=5PymzKbKv8w)]
+
+
 ***2021:***
 
 **[IROS]** BundleTrack: 6D Pose Tracking for Novel Objects without Instance or Category-Level 3D Models, [[paper](https://arxiv.org/abs/2108.00516)] [[github](https://github.com/wenbowen123/BundleTrack)]
